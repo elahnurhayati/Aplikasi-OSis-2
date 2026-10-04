@@ -1,0 +1,6 @@
+{
+  "name": "Hunter OSIS Al-Achdan - Sistem Manajemen & Administrasi Terpadu",
+  "description": "Aplikasi Manajemen OSIS Madrasah Al-Achdan 1 Tahun Masa Jabatan Lengkap: Administrasi Surat, Progres Kegiatan Real-Time, Inventaris, Kas Keuangan, KTA Hunter License, Cetak & Unduh Dokumen. Dibuat oleh Nandi Achdarizal Sutisna.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

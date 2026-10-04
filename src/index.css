@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0c1222;
+    color: #e2e8f0;
+  }
+  
+  .font-heading {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+/* Custom School Portal Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #090e1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Professional OSIS Card & Glow Effects */
+.osis-card {
+  background: #111a2e;
+  border: 1px solid #1e293b;
+}
+
+.osis-card-hover:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 20px -2px rgba(59, 130, 246, 0.15);
+}
+
+.osis-badge-blue {
+  background: rgba(30, 58, 138, 0.4);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.osis-badge-green {
+  background: rgba(6, 78, 59, 0.4);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Print Rules - Bulletproof A4 Output */
+@media print {
+  html, body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Hide entire application shell during printing */
+  header,
+  aside,
+  nav,
+  footer,
+  button,
+  .no-print,
+  .print-hide {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Show only the printable container */
+  #printable-paper,
+  .print-only-container {
+    display: block !important;
+    visibility: visible !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 10mm 15mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm;
+  }
+}
+
